@@ -1,0 +1,68 @@
+site_name: Crater
+site_description: "Crater: A strongly-typed superset of Lua"
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.tabs
+    - navigation.expand
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tabs.link
+    - content.admonitions
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+      primary: indigo
+      accent: deep purple
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+      primary: indigo
+      accent: deep purple
+  font:
+    text: Roboto
+    code: Fira Code
+  icon:
+    tasklist:
+      checked: material/checkbox-marked-circle-outline
+      unchecked: material/checkbox-blank-circle-outline
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - footnotes
+  - def_list
+  - pymdownx.details
+  - pymdownx.emoji
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - toc:
+      permalink: 🔗
+
+nav:
+  - Home: index.md
+  - About:
+    - Getting Started: getting-started.md
+    - Roadmap: contributing/roadmap.md
+    - FAQ: contributing/faq.md
+  - Language:
+    - Basics: language/basics.md
+    - Types: language/types.md
+    - Generics: language/generics.md
+    - Tuples: language/tuples.md
+    - Modules: language/modules.md
+  - Tools:
+    - CLI: tools/cli.md
