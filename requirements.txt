@@ -1,0 +1,10 @@
+admonition
+codehilite
+footnotes
+def_list
+pymdownx.details
+pymdownx.emoji
+pymdownx.superfences
+pymdownx.tabbed
+pymdownx.tasklist
+toc
